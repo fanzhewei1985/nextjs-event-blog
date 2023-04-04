@@ -4,9 +4,9 @@ import Link from "next/link";
 const EventsPage=({data})=>{
 
     return(
-        <div>
-        <h1>Event Page</h1>
-    <div>
+        <div className='eventPage'>
+        <h1>Events</h1>
+    <div className='eventList'>
         {data.map(ev=>(
             <Link key={ev.id} href={`/events/${ev.id}`}>
                 <Image src={ev.image} width={300} height={200} alt={ev.title} />

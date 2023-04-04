@@ -4,10 +4,10 @@ const EventsCatPage=({data,pageName})=>{
 
     return(
 
-        <div>
+        <div className='eventPage'>
             <h1>Event in {`${pageName.charAt(0).toUpperCase()}${pageName.slice(1)}` }</h1>
             <div>
-                {data.map(ev=><Link key={ev.id}  href={`/events/${ev.city}/${ev.id}`}>
+                {data.map(ev=><Link className='card' key={ev.id}  href={`/events/${ev.city}/${ev.id}`}>
 <Image src={ev.image} width={300} height={200} alt={ev.title}/>
                     <h2>{ev.title}</h2>
                          <p>{ev.description}</p>

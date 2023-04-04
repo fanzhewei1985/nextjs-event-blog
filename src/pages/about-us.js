@@ -2,7 +2,7 @@
 const AboutUsPage=()=>{
 
     return(
-        <div>
+        <div className='aboutUs'>
         <h1>About us Page</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Debitis dolore dolores doloribus dolorum eligendi impedit,
